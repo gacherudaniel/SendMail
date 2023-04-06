@@ -14,15 +14,15 @@ if(isset($_POST["send"])){
     $mail->isSMTP();                                      
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                               
-    $mail->Username = 'danielgacheru01@gmail.com';                
-    $mail->Password = 'rijtdgrqdtnpmivu';                          
+    $mail->Username = 'your_email@example.com';                
+    $mail->Password = 'input app password here';                          
     $mail->SMTPSecure = 'tls';                            
     $mail->Port = 587;
     
    
 
-    $mail->setFrom('danielgacheru01@gmail.com', 'Daniel Gacheru');
-    $mail->addAddress('regexmark1@gmail.com', 'Mark Kibocha');
+    $mail->setFrom('your_email@example.com', 'YOUR NAME');
+    $mail->addAddress('recipient_email@example.com', 'Recipients name');
 
     $mail->isHTML(true);
     // Set the subject line
